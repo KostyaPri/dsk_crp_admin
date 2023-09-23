@@ -1,0 +1,31 @@
+.search {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 9;
+
+    &__input {
+        height: 40px;
+        width: 298px;
+        border: 1px solid rgba(19, 164, 189, 0.25);
+        border-radius: 8px;
+        background: transparent;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(3, 3, 3, 0.5);
+        padding-left: 48px;
+    }
+
+    &__btn {
+        position: absolute;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,256 @@
+.status-message {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+
+
+    .notif {
+        // width: 430px;
+        position: relative;
+        margin: 0 auto 25px auto;
+        padding: 30px 20px;
+        text-align: left;
+        border-radius: 12px;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        cursor: default;
+        display: none;
+
+        p {
+            text-align: left;
+            font-weight: bold;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            margin: 0;
+            padding-right: 50px;
+
+            &:before {
+                text-align: center;
+                color: #FF87CE;
+                margin-top: -18px;
+                top: 50%;
+                right: 25px;
+                width: 30px;
+                content: "!";
+                font-size: 30px;
+                color: #FF87CE;
+                border: 1px solid #FF87CE;
+                position: absolute;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .notif-progress {
+        width: 0;
+        height: 1px;
+        background: #29B0DB;
+        opacity: 0.5;
+        position: absolute;
+        bottom: 10px;
+        left: 3%;
+        border-radius: 12px;
+    }
+
+    .notif-color-1 {
+        background: #FEFEFE;
+
+        p {
+            color: #FF87CE;
+        }
+    }
+
+    .notif-active {
+        display: block;
+        -webkit-animation: fadeOut 3s linear forwards;
+        -moz-animation: fadeOut 3s linear forwards;
+        -o-animation: fadeOut 3s linear forwards;
+        -ms-animation: fadeOut 3s linear forwards;
+        animation: fadeOut 3s linear forwards;
+
+        .notif-progress {
+            -webkit-animation: runProgress 2s linear forwards 0.7s;
+            -moz-animation: runProgress 2s linear forwards 0.7s;
+            -o-animation: runProgress 2s linear forwards 0.7s;
+            -ms-animation: runProgress 2s linear forwards 0.7s;
+            animation: runProgress 2s linear forwards 0.7s;
+        }
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+
+    99% {
+        opacity: 0;
+        -webkit-transform: translateY(-25px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+
+    99% {
+        opacity: 0;
+        -moz-transform: translateY(-25px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        -o-transform: translateY(0px);
+    }
+
+    99% {
+        opacity: 0;
+        -o-transform: translateY(-25px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+
+    99% {
+        opacity: 0;
+        -ms-transform: translateY(-25px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    99% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes runProgress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 94%;
+    }
+}
+
+@-moz-keyframes runProgress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 94%;
+    }
+}
+
+@-o-keyframes runProgress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 94%;
+    }
+}
+
+@-ms-keyframes runProgress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 94%;
+    }
+}
+
+@keyframes runProgress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 94%;
+    }
+}

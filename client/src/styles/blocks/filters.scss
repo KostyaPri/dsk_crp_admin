@@ -1,0 +1,129 @@
+.filters {
+    position: relative;
+    margin-right: 24px;
+    z-index: 9;
+    margin-right: 100px;
+
+    &__btn-open {
+        height: 40px;
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        line-height: 15px;
+        color: #13A4BD;
+        cursor: pointer;
+        padding: 0;
+        font-size: 15px;
+
+        &__icon {
+            margin-right: 8px;
+        }
+    }
+
+    &__wrapper {
+        display: none;
+        margin-top: 32px;
+        height: 0;
+        transition: display height 1s;
+    }
+
+    &__wrapper_active {
+        display: flex;
+        height: auto;
+        padding-bottom: 24px;
+    }
+
+    &__blocks {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    &__inner-btns {
+        width: 283px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #030303;
+        opacity: 0.5;
+    }
+
+    &__btn {
+        margin-top: 8px;
+        margin-right: 8px;
+        padding: 8px 12px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #030303;
+        border-radius: 8px;
+        border: 1px solid rgba(19, 164, 189, 0.25);
+        background: transparent;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(19, 164, 189, 0.6);
+            color: #FEFEFE;
+        }
+
+        &:active {
+            opacity: .7;
+        }
+
+        &_active {
+            background: #13A4BD;
+            color: #FEFEFE;
+        }
+    }
+
+    &__panel {
+        position: relative;
+    }
+
+    &__date-input {
+        width: 333px;
+        min-height: 40px;
+        border-radius: 8px;
+        border: 1px solid rgba(19, 164, 189, 0.25);
+        padding: 10px 12px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #030303;
+        background: transparent;
+        cursor: pointer;
+        margin-top: 8px;
+
+        span {
+            opacity: .5;
+        }
+    }
+
+    &__date-btn {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+    .react-calendar {
+        &__label {
+            pointer-events: none !important;
+        }
+
+
+    }
+}
